@@ -218,7 +218,7 @@ function! s:indent_like_opening_paren(lnum)
     " indent further to distinguish the continuation line
     " from the next logical line.
     if text =~# b:control_statement && res == base + s:sw()
-        return base + s:sw() * 2
+        return base + s:sw()
     else
         return res
     endif
